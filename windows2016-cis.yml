@@ -1,0 +1,8 @@
+- name: Harden Server
+  hosts: windows2019
+  become_method: runas
+  become: true
+  roles:
+#    - ansible-windows-hardening-master
+     - ansible-os-win-2016
+  tasks:
