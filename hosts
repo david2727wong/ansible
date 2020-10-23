@@ -1,0 +1,27 @@
+[rhel7]
+#10.63.113.80 ansible_user=asl
+#10.63.113.81 ansible_user=asl
+# temp logserver IP: 94
+10.63.113.33
+#10.63.113.92 ansible_user=asl
+#192.168.80.232 ansible_user=root
+
+[rhel7:vars]
+ansible_user=ansible
+ansible_become_pass=P@ssw0rd
+ansible_ssh_pass=P@ssw0rd
+
+[windows2019]
+10.63.113.184
+
+[windows2019:vars]
+ansible_user=svradmin
+ansible_password=P@ssw0rd
+ansible_become_user=svradmin
+ansible_become_pass=P@ssw0rd
+ansible_port=5986
+ansible_connection=winrm
+ansible_winrm_server_cert_validation=ignore
+
+
+
