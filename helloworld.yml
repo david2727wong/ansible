@@ -1,5 +1,7 @@
-- name: Hello World Sample
+- name: Harden Server
   hosts: all
+  roles:
+     - ansible-os-win-2016
   tasks:
     - name: Hello Message
       debug:
